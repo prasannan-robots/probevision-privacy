@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProbeVision privacy policy</title>
+<style>
+  :root { --ink: #1e2328; --soft: #3a424a; --bg: #eef0ec; --card: #fafbf8; --line: #d5d9d2; --accent: #f5b800; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--ink); color: #fff; padding: 28px 16px; border-bottom: 6px solid var(--accent); }
+  header div, main { max-width: 720px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 1.8rem; }
+  header p { margin: 4px 0 0; color: #c9ced2; }
+  main { padding: 8px 16px 48px; }
+  h2 { margin-top: 2rem; font-size: 1.25rem; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  a { color: #0b57d0; }
+  .updated { color: var(--soft); }
+</style>
+</head>
+<body>
+<header><div><h1>ProbeVision privacy policy</h1><p>Hands-free multimeter reading for PCB checksheets</p></div></header>
+<main>
+<p class="updated">Last updated: 29 October 2026</p>
+<p>ProbeVision helps a tester fill in a PCB sanity checksheet by reading a multimeter's display with the phone camera. This policy explains what the app does with information on your phone.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li><strong>Camera.</strong> The camera watches the multimeter display and the board's QR code. Frames are processed on the phone to read the digits and the serial number, then discarded. No photos or video are saved or sent anywhere.</li>
+  <li><strong>Microphone.</strong> If you use voice mode, the app listens for a few command words ("next", "back") using your phone's built-in speech recognition, which the app asks to run offline. ProbeVision does not record or store audio. Your phone's speech service (usually Google's) handles recognition under its own terms.</li>
+  <li><strong>Your checksheets.</strong> Procedures, batches and readings are stored only in the app's private storage on your phone. They leave the phone only when you choose to export a checksheet and pick where to send it.</li>
+  <li><strong>Settings</strong> stay on your phone.</li>
+</ul>
+<p>ProbeVision has no accounts, no ads, and no analytics of its own, and it does not sell or share your data.</p>
+
+<h2>Google libraries</h2>
+<p>The app uses Google ML Kit (text recognition and barcode scanning), which runs on the phone. Like many Google SDKs, ML Kit may send Google anonymous diagnostic and performance information (for example, the API used, how long it took, and the device model) to maintain and improve the service. It does not send your camera images, readings or checksheets. See <a href="https://developers.google.com/ml-kit/terms">Google's ML Kit terms</a>.</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Camera</td><td>Read the multimeter display and board QR codes</td></tr>
+  <tr><td>Microphone</td><td>Voice commands ("next", "back"), only when voice mode is on</td></tr>
+  <tr><td>Storage / files</td><td>Import a checksheet (.xlsx) and export the filled one, when you choose to</td></tr>
+  <tr><td>Vibrate</td><td>Confirm a captured reading</td></tr>
+  <tr><td>Internet</td><td>Used by Google ML Kit for the diagnostics above; ProbeVision itself sends nothing</td></tr>
+</table>
+
+<h2>Children</h2>
+<p>ProbeVision is a tool for electronics testing and is not directed at children.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted at this address with a new date.</p>
+<p>Questions: <a href="https://github.com/prasannan-robots/probevision-privacy/issues">open an issue on GitHub</a>.</p>
+</main>
+</body>
+</html>
